@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Illustratrated Carousel Animation | Slide Version</title>
+    <title>Illustratrated Carousel Animation | Circle Version</title>
 
     <style>
       * {
@@ -47,87 +47,261 @@
         }
       }
 
-      #i70_90-1,
-      #i70_90-4,
-      #i110_100-1,
-      #i100_140-1 {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: slide1 6s ease-in-out infinite;
-      }
+      /* Sq 1 - bottom left */
 
-      #i70_90-2,
-      #i70_90-5,
-      #i110_100-2,
-      #i100_140-2 {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: slide2 6s ease-in-out infinite;
+      #i70_90-1 {
+        opacity: 0;
+        animation: sq11 6s ease-in-out infinite;
       }
-
-      #i70_90-3,
-      #i70_90-6,
-      #i110_100-3,
-      #i100_140-3 {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: slide3 6s ease-in-out infinite;
-      }
-
-      @keyframes slide1 {
+      @keyframes sq11 {
         0% {
-          transform: translateX(100%);
+          opacity: 0;
         }
 
-        10%,
-        30% {
-          transform: translateX(0%);
+        8.33%,
+        33.32% {
+          opacity: 1;
         }
 
-        40%,
-        80% {
-          transform: translateX(-100%);
-        }
-
+        41.65%,
         100% {
-          transform: translateX(100%);
+          opacity: 0;
         }
       }
 
-      @keyframes slide2 {
+      #i70_90-2 {
+        opacity: 0;
+        animation: sq12 6s ease-in-out infinite;
+      }
+
+      @keyframes sq12 {
         0%,
-        30% {
-          transform: translateX(100%);
+        33.32% {
+          opacity: 0;
         }
 
-        40%,
-        60% {
-          transform: translateX(0%);
+        41.65%,
+        58.31% {
+          opacity: 1;
         }
 
-        70%,
-        80% {
-          transform: translateX(-100%);
-        }
-
+        66.64%,
         100% {
-          transform: translateX(100%);
+          opacity: 0;
         }
       }
 
-      @keyframes slide3 {
+      #i70_90-3 {
+        opacity: 0;
+        animation: sq13 6s ease-in-out infinite;
+      }
+
+      @keyframes sq13 {
         0%,
-        60% {
-          transform: translateX(100%);
+        58.31% {
+          opacity: 0;
         }
 
-        70%,
-        90% {
-          transform: translateX(0%);
+        66.64%,
+        91.63% {
+          opacity: 1;
         }
 
+        99.96%,
         100% {
-          transform: translateX(-100%);
+          opacity: 0;
+        }
+      }
+
+      /* Sq 2 - top left*/
+
+      #i110_100-1 {
+        animation: sq21 6s ease-in-out infinite;
+      }
+
+      @keyframes sq21 {
+        0% {
+          opacity: 0;
+        }
+
+        8.33%,
+        24.99% {
+          opacity: 1;
+        }
+
+        33.32%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i110_100-2 {
+        animation: sq22 6s ease-in-out infinite;
+      }
+
+      @keyframes sq22 {
+        0%,
+        24.99% {
+          opacity: 0;
+        }
+
+        33.32%,
+        66.64% {
+          opacity: 1;
+        }
+
+        74.97%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i110_100-3 {
+        animation: sq23 6s ease-in-out infinite;
+      }
+
+      @keyframes sq23 {
+        0%,
+        66.64% {
+          opacity: 0;
+        }
+
+        74.97%,
+        91.63% {
+          opacity: 1;
+        }
+
+        99.96%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* Sq 3 -  top right */
+
+      #i70_90-4 {
+        animation: sq31 7.5s ease-in-out infinite;
+      }
+
+      @keyframes sq31 {
+        0% {
+          opacity: 0;
+        }
+
+        6.66%,
+        33.3% {
+          opacity: 1;
+        }
+
+        39.96%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i70_90-5 {
+        animation: sq32 7.5s ease-in-out infinite;
+      }
+
+      @keyframes sq32 {
+        0%,
+        33.3% {
+          opacity: 0;
+        }
+
+        39.36%,
+        59.34% {
+          opacity: 1;
+        }
+
+        66%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i70_90-6 {
+        animation: sq33 7.5s ease-in-out infinite;
+      }
+
+      @keyframes sq33 {
+        0%,
+        59.34% {
+          opacity: 0;
+        }
+
+        66%,
+        92.64% {
+          opacity: 1;
+        }
+
+        99.3%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* Sq 4 - bottom right */
+
+      #i100_140-1 {
+        animation: sq41 6.5s ease-in-out infinite;
+      }
+
+      @keyframes sq41 {
+        0% {
+          opacity: 0;
+        }
+
+        7.6%,
+        45.6% {
+          opacity: 1;
+        }
+
+        53.2%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i100_140-2 {
+        animation: sq42 6.5s ease-in-out infinite;
+      }
+
+      @keyframes sq42 {
+        0%,
+        45.6% {
+          opacity: 0;
+        }
+
+        53.2%,
+        68.4% {
+          opacity: 1;
+        }
+
+        76%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #i100_140-3 {
+        animation: sq43 6.5s ease-in-out infinite;
+      }
+
+      @keyframes sq43 {
+        0%,
+        68.4% {
+          opacity: 0;
+        }
+
+        76%,
+        91.2% {
+          opacity: 1;
+        }
+
+        98.8%,
+        100% {
+          opacity: 0;
         }
       }
     </style>
